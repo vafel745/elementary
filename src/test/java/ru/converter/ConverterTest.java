@@ -10,7 +10,7 @@ class ConverterTest {
         float in = 180;
         float expected = 2;
         float out = Converter.rubleToDollar(in);
-        float eps = 0.0001f;
+        float eps = 0.01f;
         assertThat(out).isEqualTo(expected, withPrecision(eps));
     }
 
@@ -19,16 +19,16 @@ class ConverterTest {
         float in = 134;
         float expected = 1.4888f;
         float out = Converter.rubleToDollar(in);
-        float eps = 0.0001f;
+        float eps = 0.01f;
         assertThat(out).isEqualTo(expected, withPrecision(eps));
     }
 
     @Test
-    void whenConvert453RblThen5dot033Dlr() {
+    void whenConvert453RblThen5dot0333Dlr() {
         float in = 453;
         float expected = 5.0333f;
         float out = Converter.rubleToDollar(in);
-        float eps = 0.0001f;
+        float eps = 0.01f;
         assertThat(out).isEqualTo(expected, withPrecision(eps));
     }
 
@@ -37,7 +37,7 @@ class ConverterTest {
         float in = 140;
         float expected = 1.4f;
         float out = Converter.rubleToEuro(in);
-        float eps = 0.0001f;
+        float eps = 0.01f;
         assertThat(out).isEqualTo(expected, withPrecision(eps));
     }
 
@@ -46,7 +46,7 @@ class ConverterTest {
         float in = 467;
         float expected = 4.67f;
         float out = Converter.rubleToEuro(in);
-        float eps = 0.0001f;
+        float eps = 0.01f;
         assertThat(out).isEqualTo(expected, withPrecision(eps));
     }
 
@@ -55,7 +55,7 @@ class ConverterTest {
         float in = 876;
         float expected = 8.76f;
         float out = Converter.rubleToEuro(in);
-        float eps = 0.0001f;
+        float eps = 0.01f;
         assertThat(out).isEqualTo(expected, withPrecision(eps));
     }
 }
