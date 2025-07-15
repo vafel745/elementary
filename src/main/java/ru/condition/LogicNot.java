@@ -3,32 +3,26 @@ package ru.condition;
 public class LogicNot {
 
     public static boolean isEven(int num) {
-        boolean result = num % 2 == 0;
-        return true;
+        return num % 2 == 0;
     }
 
     public static boolean isPositive(int num) {
-        boolean result = num > 0;
-        return true;
+        return num > 0;
     }
 
     public static boolean notEven(int num) {
-        boolean result = num % 2 != 0;
-        return true;
+        return num % 2 != 0;
     }
 
     public static boolean notPositive(int num) {
-        boolean result = num < 0;
-        return true;
+        return num < 0;
     }
 
     public static boolean notEvenAndPositive(int num) {
-        boolean result = notEven(num) & isPositive(num);
-        return true;
+        return notEven(num) & isPositive(num);
     }
 
     public static boolean evenOrNotPositive(int num) {
-        boolean result = isEven(num) | notPositive(num);
-        return true;
+        return isEven(num) | notPositive(num);
     }
 }
