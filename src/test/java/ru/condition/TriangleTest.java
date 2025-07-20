@@ -15,9 +15,9 @@ class TriangleTest {
 
     @Test
     void whenNotExist() {
-        double ab = 2.0;
-        double ac = 2.0;
-        double bc = 5.0;
+        double ab = 0.0;
+        double ac = 0.0;
+        double bc = 0.0;
         boolean result = Triangle.exist(ab, ac, bc);
         assertThat(result).isFalse();
     }
