@@ -3,10 +3,10 @@ package ru.condition;
 public class ThreeMax {
     public static int max(int first, int second, int third) {
         int result = first;
-        if (second > first && second > third) {
+        if (second > first) {
             result = second;
         }
-        if (third > second || third > first) {
+        if (third > first) {
             result = third;
         }
         return result;
