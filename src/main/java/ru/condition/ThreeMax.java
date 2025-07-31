@@ -2,15 +2,12 @@ package ru.condition;
 
 public class ThreeMax {
     public static int max(int first, int second, int third) {
-        int result = third;
-        if (first > second && first > third) {
-            result = first;
-        }
-        if (second > first && second > third) {
+        int result = first;
+        if (first < second || first < third) {
             result = second;
         }
-        if (first == second || second == third) {
-            result = second;
+        if (third > second && third > first) {
+            result = third;
         }
         return result;
     }
