@@ -3,7 +3,7 @@ package ru.array;
 public class Square {
     public static int[] calculate(int bound) {
         int[] arr = new int[bound];
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = 0; i < bound; i++) {
             arr[i] = i * i;
         }
         return arr;
