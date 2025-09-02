@@ -2,11 +2,9 @@ package ru.array;
 
 public class SwitchArray {
     public static int[] swap(int[] array, int source, int dest) {
-        for (int i = 0; i < 1; i++) {
             int temp = array[source];
             array[source] = array[dest];
             array[dest] = temp;
-        }
         return array;
     }
 
