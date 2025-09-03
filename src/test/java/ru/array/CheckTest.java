@@ -31,4 +31,11 @@ class CheckTest {
         boolean result = Check.mono(data);
         assertThat(result).isFalse();
     }
+
+    @Test
+    void testCheck() {
+        boolean[] data = new boolean[] {true, true, true, true, false};
+        boolean result = Check.mono(data);
+        assertThat(result).isFalse();
+    }
 }
