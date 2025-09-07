@@ -1,6 +1,6 @@
 package ru.array;
 
-public class SortSelected {
+public class SortSelected { /* Сортировка выбором */
 
     public static int[] sort(int[] data) {
         for (int i = 0; i < data.length - 1; i++) {
