@@ -11,10 +11,8 @@ public class TwoNumberSum {
                 j--;
             } else if (array[i] + array[j] == target) {
                 return new int[]{i, j};
-            } else {
-                break;
             }
         }
-        return new int[]{};
+        return new int[0];
     }
 }
