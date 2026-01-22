@@ -39,4 +39,14 @@ class PointTest {
         double out = a.distance(b);
         assertThat(out).isEqualTo(expected, withPrecision(0.01));
     }
+
+    @Test
+    void when186715to1794then7dot07() {
+        Point a = new Point(7, 4, 3);
+        Point b = new Point(6, 9, 2);
+        Point c = new Point(18, 17, 8);
+        double expected = 7.07;
+        double out = a.distance3d(b);
+        assertThat(out).isEqualTo(expected, withPrecision(0.01));
+    }
 }
