@@ -45,7 +45,7 @@ class PointTest {
         Point a = new Point(7, 4, 3);
         Point b = new Point(6, 9, 2);
         Point c = new Point(18, 17, 8);
-        double expected = 7.07;
+        double expected = 5.19;
         double out = a.distance3d(b);
         assertThat(out).isEqualTo(expected, withPrecision(0.01));
     }
